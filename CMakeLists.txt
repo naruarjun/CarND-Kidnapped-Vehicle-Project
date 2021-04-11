@@ -18,9 +18,13 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
 include_directories(/usr/local/include)
 include_directories(/usr/local/opt/openssl/include)
+include_directories(/opt/homebrew/opt/libuv/include)
+include_directories("/opt/homebrew/opt/openssl@1.1/include")
 link_directories(/usr/local/lib)
 link_directories(/usr/local/opt/openssl/lib)
 link_directories(/usr/local/Cellar/libuv/1*/lib)
+link_directories(/opt/homebrew/opt/libuv/lib)
+link_directories("/opt/homebrew/opt/openssl@1.1/lib")
 
 endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 
